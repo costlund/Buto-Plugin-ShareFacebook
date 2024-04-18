@@ -14,7 +14,23 @@ readme:
       name: Widgets
       item:
         -
-          name: widget_xxx
+          name: widget_button_share_page
+          description: |
+            ````
+            type: widget
+            data:
+              plugin: share/facebook
+              method: button_share_page
+              data:
+            ````
+            Set u as the url to share (optional).
+
+            If not set.
+            - Check if param u is in request.
+            - Else using current page url. 
+            ````
+                u: _any_url_
+            ````
     -
       name: Event
       item: {  }

@@ -2,10 +2,10 @@
 class PluginShareFacebook{
   function __construct() {
     wfPlugin::includeonce('wf/yml');
+    wfPlugin::enable('icons/bootstrap_v1_8_1');
   }
   public function page_demo(){
     wfPlugin::enable('share/facebook');
-    wfPlugin::enable('icons/bootstrap_v1_8_1');
     $widget = wfDocument::createWidget('share/facebook', 'button_share_page');
     wfDocument::renderElement(array($widget));
   }
